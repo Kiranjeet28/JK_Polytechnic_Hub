@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lora&family=Merriweather:wght@300&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+.class2{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack:space-evenly;
+      -ms-flex-pack:space-evenly;
+          justify-content:space-evenly;
+  width: 100vw;
+  background-color:#873e23 ;
+  margin-top: 4vh;
+
+.pr{
+  font-family:Lora;
+
+}
+  
+}
+.first{
+  height : 17vh;
+  width: 12vw;
+  color: black;
+  background-color:#f1ca9b;
+  border: 2px solid #e6882a ;
+  font-size: 3vh;
+  font-family:Lora;
+  margin: 20px;
+ 
+}
+hr{
+  background-color: #e6882a;
+  height: 2px;
+
+}
+
+@media  screen and (max-width:1800px)  {
+  .first{
+      width: 200px;
+  }
+ 
+}
+
