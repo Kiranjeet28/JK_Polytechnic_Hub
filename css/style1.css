@@ -245,6 +245,8 @@ a{
   }
   #intro{
     font-size: 1.9vh;
+  }#footertitle{
+    font-size: 2.5vh;
   }
   .paperdivBlock{
     margin: 40px;
