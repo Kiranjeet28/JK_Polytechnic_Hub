@@ -6,7 +6,38 @@
     padding: 3vh 0vw 0vh 0vw; 
 }
 
+.paperdivHeading{
+  height: 10vh;
+  width: 420px;
+  border-radius: 10px;
+  background-color:rgb(234, 230, 230);
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  box-shadow: 0 0 10px rgb(0,0,0,0.5) ;
+  transition: transform 0.5s, width 0.5s, height 0.5s;
+}
+.paperdivHeading:hover{
+  background-color:rgb(196, 196, 196);
+ 
+  transform: scale(1.1); 
+}
+
+.paperdivHeading p{
+  font-size: 40px;
+  font-family: Lora;
+  margin-right: 2vw;
+}
+
+
 .paperdiv {
+ 
+  display: none;
+}
+.paperdivBlock{
   border: 1px solid grey;
   border-radius: 2%;
   background-color: rgb(234, 230, 230);
@@ -14,7 +45,10 @@
   display: inline-block;
   margin: 20px 0px 20px 0px;
   box-shadow: 0 0 20px rgb(0,0,0,0.9) ;
+  display: block;
+
 }
+
 
 .list ol li {
   border-bottom: 3px solid #e6882a;
@@ -35,6 +69,7 @@
 font-family: Lora;
 background-color: #f1ca9b;
 color: rgb(42, 40, 40);
+padding: 0.8vh;
 
 }
 h1{
@@ -57,19 +92,17 @@ hr{
 }
 /* for the section of the particular 2box */
 .class2{
- display: -webkit-box;
- display: -ms-flexbox;
- display: flex;
- -ms-flex-wrap: wrap;
-     flex-wrap: wrap;
- -webkit-box-pack: space-evenly;
-     -ms-flex-pack: space-evenly;
-         justify-content: space-evenly;
- width: 100vw;
- /* background-color :#873e23; */
- margin-top: 4vh;
-
-
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-around;
+  width: auto;
+  flex-direction: row;
+  height: auto;
+  align-items: center;
 }  
 div{
  font-size: x-large;
@@ -83,7 +116,7 @@ padding: 15px;
 footer{
 height: max-content;
 width: 100vw;
-background-color: #873e23;
+background-color: #462012;
 color: azure;
 -webkit-box-align: center;
    -ms-flex-align: center;
@@ -114,71 +147,39 @@ font-family: Young Serif;
 
   /* Styling for the Facebook logo container */
 
-         #links{
-           display: -webkit-box;
-           display: -ms-flexbox;
-           display: flex;
+.links{
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
  -ms-flex-wrap: nowrap;
-     flex-wrap: nowrap;
+ flex-wrap: nowrap;
  -webkit-box-pack: space-evenly;
-     -ms-flex-pack: space-evenly;
-         justify-content: space-evenly;
-         }
-         #inst{
- border-radius:7px;
+ -ms-flex-pack: space-evenly;
+ align-items: center;
+ justify-content: center;
+}
+      
+ 
+.footerimg{
+  border-radius: 3vh;
+  height: 5vh;
+  width: auto;
+  margin-right: 7vh;
+  margin-left: 2vh;
+}
+ /* toggle switch */
+         
+ #tooglebutton {
 
-         }
-         #browser{
-           border-radius: 50%;
-         }
-         #yt{
-           border-radius: 7px;
-         }
-         circular-motion {
-           width: 100%;
-           height: 100%;
-           -webkit-transition: -webkit-transform 1s;
-           transition: -webkit-transform 1s;
-           -o-transition: transform 1s;
-           transition: transform 1s;
-           transition: transform 1s, -webkit-transform 1s;
-         }
-         
-         .circular-motion:hover {
-           -webkit-animation: rotate 2s linear infinite;
-                   animation: rotate 2s linear infinite;
-         }
-         
-         @-webkit-keyframes rotate {
-           0% {
-             -webkit-transform: rotate(0deg);
-                     transform: rotate(0deg);
-           }
-           100% {
-             -webkit-transform: rotate(360deg);
-                     transform: rotate(360deg);
-           }
-         }
-         
-         @keyframes rotate {
-           0% {
-             -webkit-transform: rotate(0deg);
-                     transform: rotate(0deg);
-           }
-           100% {
-             -webkit-transform: rotate(360deg);
-                     transform: rotate(360deg);
-           }
-         }
-         /* toggle switch */
-         
-
+  position: absolute;
+  right: 2vw;
+}
 
 
 .switch {
   position: relative;
   display: inline-block;
-  width: 80px;
+  width: 70px;
   height: 50px;
   margin: 6px ;
 }
@@ -196,20 +197,20 @@ font-family: Young Serif;
   right: 0;
   bottom: 0;
   background-color: #e6882a;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 40px;
-  width: 40px;
-  left: 6px;
-  bottom: 4px;
+  height: 37px;
+    width: 37px;
+    left: 6px;
+    bottom: 6px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .2s;
+  transition: .2s;
   border-radius: 50%;
 }
 
@@ -218,12 +219,91 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
 }
 a{
   text-decoration: none;
   color: black;
   
+}
+
+
+@media screen and (max-width:800px){
+  .paperdivHeading p{
+    font-size: 2.2vh;
+    font-weight: bold;
+  }
+  .paperdivHeading{
+    height: 5vh;
+  }
+  .class2{
+    flex-wrap: wrap;
+    margin-top: 0%;
+  }
+  #intro  {
+    font-size: 1.9vh;
+  }.paperdivBlock{
+    margin: 40px;
+    width: 320px;
+  }.paperdivBlock .heading h2{
+    font-size: 2.5vh;
+    padding: 0.8vh;
+
+  }
+  
+  hr{
+    border: 0.5px solid ;
+
+  }
+  .list ol li{
+    border-bottom: 0.1px solid #e6882a;
+    font-size: 1.8vh;
+    height: 45px;
+
+  }h1{
+     font-size: 2.5vh;
+  }
+  #linkbio{
+    font-size: 1.9vh;
+  }#footer-para{
+    font-size: 1.9vh;
+  }
+  #footertitle{
+    font-size: 2.5vh;
+  }.links p{
+    font-size: 1.9vh;
+  }.footerimg{
+    border-radius: 3vh;
+    height: 4vh;
+    margin-right: 2vh;
+  }.switch {
+    width: 40px;
+    height: 30px;
+  }.slider:before{
+    height: 15px;
+    width: 15px;
+    left: 6px;
+    bottom: 8px;
+    border-radius: 20px;
+
+  }header{
+    justify-content: start
+  }input:checked + .slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(215x);
+    transform: translateX(15px);
+  }
+
+}
+@media screen and (max-width:300px){
+  .switch {
+   display: none;
+  }.slider:before{
+   display: none;
+
+  }header{
+    justify-content: center;
+  }
 }

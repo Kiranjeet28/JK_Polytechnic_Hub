@@ -14,19 +14,13 @@ img {
   display: inline;
 
 }
-#tooglebutton{
-  height: 9vh;
-  width: 9vw;
-    justify-self: right;
-    top: 1vh;
-    position: absolute;
-}
+
 
 header {
 
-  background-color: #873e23;
+  background-color: #462012;
   width: 100vw;
-  height: 10vh;
+  height: 12vh;
   position: sticky;
   top: 0;
   -webkit-box-pack: center;
@@ -55,48 +49,22 @@ header {
 
 
 
-@media screen and (max-height:600px) {
+@media screen and (max-width:600px) {
   #title {
-    visibility: hidden;
+    font-size: 3vh;
   }
-
-  img {
-    visibility: hidden;
-
-
-  }
-  #links{
-    height: 40px;
-  }
-  
-
-}
-
-@media screen and (max-width:900px) {
-  #title {
-    font-size: 2vh;
-  }
-  #img{
-    height: 20px;
-    width: 40px;
+  .Icon{
+    height: auto;
   }
   header{
     justify-content: left;
 
   }
-  #tooglebutton{
-    right: 13vw;
-  }
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 70px;
-    height: 50px;
-    margin: 6px ;
-  }
+ 
+ 
   #links img{
     height: 40px;
-    width: 40px;
+    width: 35px;
   }
 
 }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lora&family=Merriweather:wght@300&family=Young+Serif&display=swap');
-img{
+.Icon{
 
   display: inline;
   width: 80px;
@@ -15,9 +15,9 @@ p1{
   display: inline;
 }
 header{
-  background-color: #873e23;
+  background-color: #462012;
   width: 100vw;
-  height: 10vh;
+  height: 12vh;
   position: sticky;
   top: 0;
   -webkit-box-pack: center;
@@ -44,14 +44,16 @@ header{
       justify-content: space-around
 }
 
-@media  screen and (max-width:900px)  {
+@media  screen and (max-width:600px)  {
    p1{
-    font-size: 30px
+    font-size: 28px
     }
     img{
-      /* visibility: hidden; */
+      height: auto;
+    }
+    header{
+      font-size: 2vh;
     }
    
   }
-  
-  
+ 
