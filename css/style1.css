@@ -237,6 +237,8 @@ a{
   }
   .paperdivHeading{
     height: 5vh;
+    transition: none;
+
   }
   .class2{
     flex-wrap: wrap;

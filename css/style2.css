@@ -237,6 +237,8 @@ a{
   }
   .paperdivHeading{
     height: 5vh;
+    transition: none;
+
   }
   .class2{
     flex-wrap: wrap;
@@ -295,9 +297,6 @@ a{
     -webkit-transform: translateX(15px);
     -ms-transform: translateX(215x);
     transform: translateX(15px);
-  }.paperdivHeading:hover{
-   
-    transform: none; 
   }
 
 }
